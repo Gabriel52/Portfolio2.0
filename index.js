@@ -35,12 +35,13 @@ app.post('/sendEmail', (req,res)=>{
     var message = req.body.mensagem;
     console.log(message)
   
+
     async function run(){
         const sendMail = await trasnporter.sendMail({
             text: `email: ${email} message: ${message} `,
             subject:'Email Portfolio',
             from:"desafiotech52@gmail.com",
-            to: "desafiotech52@gmail.com"
+            to: "gabrielbrune52@gmail.com"
         })
     }
     res.redirect('/')
