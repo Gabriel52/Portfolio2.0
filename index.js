@@ -42,6 +42,10 @@ app.post('/sendEmail', (req,res)=>{
             subject:'Email Portfolio',
             from:"desafiotech52@gmail.com",
             to: "gabrielbrune52@gmail.com"
+        }).then(()=>{
+            console.log('email enviado')
+        }).catch(error=>{
+            console.log(error)
         })
     }
     res.redirect('/')
