@@ -46,7 +46,7 @@ app.post('/sendEmail', (req,res)=>{
         try{
             console.log('email enviado com sucesso')
         }catch(error){
-            console.log(error)
+            console.log(error+"passou por aqui")
         }
 
 
