@@ -39,7 +39,7 @@ nav .img{
 .whatsapp{
     position: fixed;
     z-index: 1;
-    bottom: 5%;
+    bottom: 8%;
     right: 4%;
 }
 
@@ -47,6 +47,7 @@ nav .img{
 @media (max-width: 600px){
     .whatsapp{
         width: 12%;
+        bottom: 8%;
     }
 }
 
