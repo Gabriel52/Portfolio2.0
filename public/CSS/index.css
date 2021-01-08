@@ -450,7 +450,7 @@ form .card-agradecimentos .texto-agradecimentos {
 
 .redes-sociais img{
     margin-left: 2%;
-    width: 3%;
+    width: 50%;
 }
 @media (max-width: 600px){
     form{
@@ -480,4 +480,3 @@ footer h5{
     text-align: center;
 }
 
-/* Responsividade */
