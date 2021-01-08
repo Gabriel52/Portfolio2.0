@@ -16,7 +16,7 @@ const transporter = nodemailer.createTransport({
     secure: true,
     port: 465,
     auth:{
-        user:"gabrielbrune52@gmail.com",
+        user:"desafiotech52@gmail.com",
         pass:"6106mGjp",
     },
     tls: {
@@ -24,9 +24,6 @@ const transporter = nodemailer.createTransport({
       },
 
 })
-
-
-
 
 // Configurando ejs
 app.set('view engine', 'ejs');
@@ -56,7 +53,6 @@ app.post('/sendEmail', (req,res)=>{
         }catch(error){
             console.log(error+"passou por aqui")
         }
-
 
     }
     res.redirect('/')
