@@ -11,7 +11,7 @@ dotenv.config();
 
 // setting nodemailer
 
-const trasnporter = nodemailer.createTransport({
+const transporter = nodemailer.createTransport({
     host:"smtp.gmail.com",
     port: 587,
     secure: false,
@@ -41,7 +41,7 @@ app.post('/sendEmail', (req,res)=>{
     console.log(message)
   
 
-    async function run(){
+    async function run(){       
         const sendMail = await transporter.sendMail({
             text: `email: ${email} message: ${message} `,
             subject:'Email Portfolio',
