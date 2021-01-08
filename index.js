@@ -7,10 +7,12 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 
+
+
 // setting nodemailer
+
 const trasnporter = nodemailer.createTransport({
     host:"smtp.gmail.com",
-
     port: 587,
     secure: false,
     auth:{
@@ -19,6 +21,9 @@ const trasnporter = nodemailer.createTransport({
     }
 
 })
+
+
+
 
 // Configurando ejs
 app.set('view engine', 'ejs');
@@ -37,11 +42,11 @@ app.post('/sendEmail', (req,res)=>{
   
 
     async function run(){
-        const sendMail = await trasnporter.sendMail({
+        const sendMail = await transporter.sendMail({
             text: `email: ${email} message: ${message} `,
             subject:'Email Portfolio',
             from:"desafiotech52@gmail.com",
-            to: "gabrielbrune52@gmail.com"
+            to: "desafiotech52@gmail.com"
         })
         try{
             console.log('email enviado com sucesso')
