@@ -1,6 +1,9 @@
 *{
     font-family: 'Roboto', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Roboto', sans-serif;
 }
@@ -27,6 +30,24 @@ nav .img{
 .navbar-toggler{
     border: 1px solid white !important ;
     transition: 0.5s;
+}
+
+
+
+/* Whatsapp */
+
+.whatsapp{
+    position: fixed;
+    z-index: 1;
+    bottom: 5%;
+    right: 4%;
+}
+
+
+@media (max-width: 600px){
+    .whatsapp{
+        width: 12%;
+    }
 }
 
 /* SPAN */
@@ -432,7 +453,7 @@ form .card-agradecimentos .texto-agradecimentos {
     }
     .redes-sociais img{
         margin-left: 2%;
-        width: 8%;
+        width: 55% !important;
     }
 }
 footer{

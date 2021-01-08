@@ -2,17 +2,19 @@
 <body>
     <%- include('partials/navbar.ejs') %>
     <main>
+     
+      <a href="https://mywhats.net/brune"> <img class="whatsapp" id="img" src="assets/image/whatsapp.png" alt=""></a>
+
         <div class="profile">
             <div class="profile-text" id="desktop">
-                <div class="whatsaap">
-
-                </div>
+                    
+                
                 <p>Bem vindo, eu sou</p>
                 <div class="title">
                     <p class="title-name"><b>Gabriel Brune</b><img src="assets/gifs/hulk.gif" alt="" srcset=""> </p>
                     <!-- <img src="images/icons/pixels/animated/gustavo_jedi_saudacoes.gif" alt="Gabriel Saudações"> -->
                 </div>
-                <p id="title" class="title-text" value="Software Developer - Web Developer">Sou desenvolvedor Full-Stack Júnior, fique a vontade em meu portfólio </p>
+                <p id="title" class="title-text" value="Software Developer - Web Developer">Sou desenvolvedor Web Junior, fique a vontade em meu portfólio </p>
               
                 <a href="https://github.com/Gabriel52" class="btns">
                     <button  type="button" class="efeito efeito-1">Git Hub</button>
@@ -217,7 +219,7 @@
     </div>
 
     <!-- CONTATO -->
-    <div class="titles" >
+    <div class="titles" id="contato" >
       <h1 class="title-main" >Contato</h1>
     </div>
     <form method="POST" action="/sendEmail">
@@ -246,11 +248,14 @@
     </main>
     <footer>
       <div class="redes-sociais">
-        <img src="assets/image/github.png" alt="">
-        <img src="assets/image/cv.png" alt="">
-        <img src="assets/image/linkedin.png" alt="">
+        <a target="_blank" href="https://github.com/Gabriel52"><img src="assets/image/github.png" alt=""></a>
+        <a target="_blank" href="https://drive.google.com/file/d/1NQznVW3o2ou1Q0GEr8SzZ61tT2pGx01q/view"><img src="assets/image/cv.png" alt=""></a>
+        <a target="_blank" href="https://www.linkedin.com/in/gabriel-brune-dos-santos-032b9717a/"><img src="assets/image/linkedin.png" alt=""></a>
+        
       </div>
       <h5> &copy;Este site foi desenvoldido por Gabriel Brune</h5>
+      <h4 style="opacity: 0;"> &copy;Este site foi desenvoldido por Gabriel Brune</h4>
+
     </footer>
     
 
