@@ -54,6 +54,11 @@ nav .img{
 
 @media (max-width: 600px)
 {
+    .collapse ul{
+        display: block !important;
+        text-align: center !important;
+        margin-left: 1% !important;
+    }
     .navbar-brand img{
         width: 100% !important;
     
@@ -174,7 +179,7 @@ nav .img{
         width: 320px;
     }
     .profile-img{
-        margin-left: 14%;
+        margin-left: 14% !important;
     }   
     .logonav{
         width: 45% !important;
@@ -367,6 +372,13 @@ section{
 
   }
 
+@media (max-width: 380px){
+    .title-main{
+        font-size: 30px;
+    }
+}
+
+
 /* ///////////////////////// */
 
 /*        Contato            */
@@ -467,3 +479,5 @@ footer h5{
     color: #ffffff;
     text-align: center;
 }
+
+/* Responsividade */
