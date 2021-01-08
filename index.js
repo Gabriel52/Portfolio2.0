@@ -42,11 +42,14 @@ app.post('/sendEmail', (req,res)=>{
             subject:'Email Portfolio',
             from:"desafiotech52@gmail.com",
             to: "gabrielbrune52@gmail.com"
-        }).then(()=>{
-            console.log('email enviado')
-        }).catch(error=>{
-            console.log(error)
         })
+        try{
+            console.log('email enviado com sucesso')
+        }catch(error){
+            console.log(error)
+        }
+
+
     }
     res.redirect('/')
     return run()
