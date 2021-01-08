@@ -9,13 +9,13 @@ dotenv.config();
 
 // setting nodemailer
 const trasnporter = nodemailer.createTransport({
-    host:smtp.gmail.com,
+    host:process.env.NODEMAILER_HOST,
 
-    port: 587,
+    port: process.env.NODEMAILER_PORT,
     secure: false,
     auth:{
-        user:"gabrielbrune52@gmail.com",
-        pass:"6106mGjp",
+        user:process.env.NODEMAILER_USER,
+        pass:process.env.NODEMAILER_PASSWORD,
     }
 
 })
@@ -34,7 +34,7 @@ app.post('/sendEmail', (req,res)=>{
     var email = req.body.email
     var message = req.body.mensagem;
     console.log(message)
-    console.log(process.env.NODEMAILER_HOST)
+  
 
     async function run(){
         const sendMail = await trasnporter.sendMail({
