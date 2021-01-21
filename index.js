@@ -6,9 +6,6 @@ const dotenv = require('dotenv');
 
 dotenv.config();
 
-
-
-
 // setting nodemailer
 
 const transporter = nodemailer.createTransport({
@@ -64,7 +61,7 @@ app.post('/sendEmail', (req,res)=>{
 })
 
 
-let port = 3000
+let port = process.env.PORT || 3000 
 app.listen(port, (req,res)=>{
     console.log(`Aplicação rodando na porta ${port}`)
 })
